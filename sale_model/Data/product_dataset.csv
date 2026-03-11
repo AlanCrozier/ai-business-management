@@ -1,0 +1,6 @@
+product_id,product_name,category,supplier,cost_price,selling_price
+P101,Smart Watch,Electronics,TechSupply,80,150
+P102,Running Shoes,Sports,FitGear,40,95
+P103,Office Chair,Furniture,ComfortWorks,70,180
+P104,T-shirt,Clothing,UrbanWear,10,25
+P105,Protein Powder,Health,NutriLabs,20,60

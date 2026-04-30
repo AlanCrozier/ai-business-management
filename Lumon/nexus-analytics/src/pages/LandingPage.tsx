@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Play, BarChart3, PieChart, TrendingUp } from 'lucide-react';
+import { ArrowRight, BarChart3, PieChart, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => {

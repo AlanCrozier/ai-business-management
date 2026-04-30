@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Zap, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { LumonLogo, LumonText } from './LumonBrand';

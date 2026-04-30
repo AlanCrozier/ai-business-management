@@ -1,4 +1,3 @@
-import React from 'react';
 
 export const LumonLogo = ({ className = "w-8 h-8" }: { className?: string }) => {
   return (

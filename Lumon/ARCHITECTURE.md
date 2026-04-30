@@ -29,7 +29,7 @@ sequenceDiagram
     Sheets-->>Backend: Fetches raw Sales, Customer, Employee data
     
     Backend->>ML: Sends raw data to predictive models
-    ML-->>Backend: Returns Predicted Profit, CLV, Revenue
+    ML-->>Backend: Returns Predicted Profit, CLV, Revenue, Employee Performance
 
     Note over Backend, Sheets: If new data exists, save predictions
     Backend->>Sheets: Writes predictions back to Predictions_Data tab
@@ -52,7 +52,7 @@ Located in `backend/`, this is the central nervous system of the operation. It h
 *   **API Routing:** It provides clear, high-performance REST endpoints (like `/api/sheets/dashboard` and `/api/sheets/sync`) for the frontend to consume.
 
 ### 4. Artificial Intelligence Engine (Pre-trained ML Models)
-Located in the `models/` folder, these are the pre-trained `scikit-learn` model files (`.pkl` and `.joblib`). When new data passes through the FastAPI backend during a sync event, the backend intercepts it. It feeds the raw metrics into Random Forest and Regression models to calculate **Predicted Revenue**, **Predicted Profit**, and **Customer Lifetime Value (CLV)**. 
+Located in the `models/` folder, these are the pre-trained `scikit-learn` model files (`.pkl` and `.joblib`). When new data passes through the FastAPI backend during a sync event, the backend intercepts it. It feeds the raw metrics into Random Forest and Regression models to calculate **Predicted Revenue**, **Predicted Profit**, **Customer Lifetime Value (CLV)**, and **Employee Performance**. 
 
 ### 5. Database & Storage Layer (MySQL & Google Sheets)
 The storage layer is split into two systems:
